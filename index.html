@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>YOGA REGISTRATION FORM</title>
+     <link rel="stylesheet" href="./stylesheet.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+     <div class="container">
+          <div class="image">
+               <!-- <img src="yoga7.jpg" alt="" id="img2"> -->
+               <img src="yoga1.jpeg" alt="" id="img1">
+          </div>
+          <div class="title">
+               <h2>YOGA CLASSES</h2>
+               <p>Please fill out the form below</p>
+          </div>
+          <form action="backend.php">
+          <div class="form">
+               <div class="user_detail" >
+                    <p> user details </p>
+               <div class="input_fields">
+                    <input type="text" id="name" placeholder="Name" required>
+               </div>
+               <div class="input_fields">
+                    <input type="text" id="email" placeholder="Email" required>
+               </div>
+               <div class="input_fields">
+                    <input type="text" id="contactno" placeholder="Contact Number" required>
+               </div>
+          </div>
+               <div class="time">
+                    <p>Class time that would be good for you</p>
+                    <div class="time_all">
+                    <input type="radio" id="time1" name="time1" required>
+                    <label>Morning 6:00 to 9:00</label>
+               </div>
+               <div class="time_all">
+                    <input type="radio" id="time1" name="time1">
+                    <label>lunch 11:00 to 1:00</label>
+               </div>
+               <div class="time_all">
+                    <input type="radio" id="time1" name="time1">
+                    <label>Morning 4:30 to 6:30</label>
+               </div>
+                    <div class="time_all">
+                    <input type="radio" id="time1" name="time1">
+                    <label>Morning 6:30 to 8:30</label>
+               </div>
+               </div>
+               <div class="interest">
+                    <p> Choose your interest </p>
+                    <div class="interest_option">
+                         <input type="checkbox" class="check" required>
+                         <label>Beginner</label>
+                    </div>
+                    <div class="interest_option">
+                          <input type="checkbox" class="check">
+                         <label>Chair</label>
+                    </div>
+                    <div class="interest_option">
+                          <input type="checkbox" class="check">
+                         <label>Core power</label>
+                    </div>
+                    <div class="interest_option">
+                          <input type="checkbox" class="check">
+                         <label>Script</label>
+                    </div>
+                    <div class="interest_option">
+                          <input type="checkbox" class="check">
+                         <label>Senior</label>
+                    </div>
+                    <div class="interest_option">
+                          <input type="checkbox" class="check">
+                         <label>Slow flow</label>
+                    </div>
+                    <div class="interest_option">
+                          <input type="checkbox" class="check">
+                         <label>Vinyasa</label>
+                    </div>
+               </div>
+          </div>
+          <div class="button">
+               <input type="submit" id="submit" value="Confirm Registration !">
+          </div>
+     </form>
+     </div>
+</body>
+</html>

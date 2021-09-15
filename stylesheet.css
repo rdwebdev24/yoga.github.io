@@ -1,0 +1,229 @@
+*{
+     font-family: 'Baloo Tamma 2', cursive;
+     border: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+/* *********** image styling ************* */
+
+.image{
+     background-image: url('yoga7.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     border-radius: 20px;
+     background-size: cover;
+     transition: all 0.5s ease-in-out 0s;
+}
+
+#img1{
+     
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+   width: 50%;
+   /* position: relative; */
+   opacity: 0.8;
+   border-radius: 25px;
+   /* box-shadow: 2px 2px 20px blue; */
+
+}
+.image:hover{
+     background-image: url('./yoga12.jpg');
+}
+  
+
+/* ********* title styling ************ */
+.title{
+     color:brown;
+     background-color: rgb(204 201 201);
+     text-align: center;
+     text-shadow: 2px 3px 2px white;
+}
+.title h2{
+    font-size: 2.5rem;
+}
+.title p{
+     font-size: 1.2rem;
+     font-weight: bold;
+     
+}
+
+.form{
+  background-color: #fff7ed;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     /* flex-wrap: wrap; */
+     /* text-align: center; */
+}
+/* ************* user deatil ************ */
+.user_detail{
+
+     margin: 5px;
+     color: red;
+     order: 2;
+     width: 100%;
+}
+.user_detail .input_fields{
+     margin: 8px;
+     border: 2px solid #afa6a6;
+     transition: all 0.3 ease-in-out;
+}
+.form .user_detail .input_fields input{
+     font-size: 15px;
+     padding: 5px;
+     width: 100%;
+     
+}
+.form .user_detail .input_fields:hover{
+    border: 2px solid red;
+}
+
+.user_detail p{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* ************ ends ************* */
+
+/* ********** timing styling ********** */
+.time{
+     margin: 5px;
+     order: 1;
+     width: 100%;
+}
+.time .time_all{
+     background-color: white;
+     margin: 4px;
+     padding: 5px;
+     border: 2px solid #afa6a6;
+     transition: all 0.3s ease;
+}
+
+.time .time_all:hover{
+     border: 2px solid red;
+}
+
+.time p{
+     margin-top: 34px;
+     margin-bottom: 18px;
+     font-size: 1.4rem;
+      color: green;
+     text-align: center;
+     font-weight: bold;
+}
+/* ************ ends ************* */
+/* ********** interest start *********** */
+.interest{
+     margin: 5px;
+     order: 3;
+     width: 100%;
+}
+.interest .interest_option{
+     background-color: white;
+     margin: 4px;
+     padding: 5px;
+     border: 2px solid #afa6a6;
+     transition: all 0.3s ease;
+   
+}
+.interest .interest_option label{
+   font-size: 17px;
+}
+.interest .interest_option:hover{
+     border: 2px solid red;
+   
+}
+.interest p{ 
+     font-size: 1.4rem;
+     color: blue;
+     font-weight: bold;
+     font-size: 1.4rem;
+     text-align: center;
+}
+ /* ************* ends ************** */
+.button{
+     margin-top: 20px; 
+     width: 100%;
+     text-align: center;
+}
+.button #submit{ 
+     background-color:rgb(204 201 201);
+     font-weight: bold;
+     border-radius: 10px;
+     font-size: 20px;
+     width: 100%;
+     transition: all 0.3s ease-in-out 0s;
+
+}
+.button #submit:hover{
+       background-color:#afa6a6 ;
+       font-weight: bold;
+       font-size: 22px;
+       color:white
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ************ responsiveness ************** */
+ @media  (min-width:300px) and (max-width:700px){
+     .form{
+     display: flex;
+     flex-direction: column;
+}
+
+.time{
+     order: 2;
+}
+
+.user_detail{
+     order: 1;
+}
+.interest{
+     order: 3;
+    
+}
+
+.time p{
+      margin: auto;
+}
+.user_detail p{
+     margin: auto;
+       
+}
+.interest p{ 
+     margin: auto;
+}
+.form .user_detail .input_fields{
+    margin-right: 12px;
+     
+}
+.time .time_all{
+     margin-right: 12px;
+}
+.interest .interest_option{
+     margin-right: 12px;
+
+   
+}
+     .button{
+          display: block;
+          margin-left: auto;
+          margin-right:auto ;
+          width: 50%;
+          
+     }
+     .button:last-child{
+          margin-bottom: 25px;
+     }
+ 
+}
